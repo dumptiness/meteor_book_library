@@ -2,14 +2,11 @@
 	<div class="container">
 		<h1>The Library</h1>
 		<fieldset>
-			<legend>[the book]</legend>
-			<label>Book's name</label>
-			<input type="text" id="book_name" value="[book name]">
-			<label>Author</label>
-			<input type="text" id="book_author" value="[author]">
-			<label>Date</label>
-			<input type="text" id="book_date" value="[date]">
-			<button id="update_book_values">Update [the book]</button>
+			<legend>Book infos</legend>
+			<div class="info"><div class="label">Name</div> {{book_name}}</div>
+			<div class="info"><div class="label">Author</div> {{book_author}}</div>
+			<div class="info"><div class="label">Date</div> {{book_date}}</div>
+			<a href="">Update</a> / <a href="" id="delete_book">Delete</a>
 		</fieldset>
 	</div>
 </template>

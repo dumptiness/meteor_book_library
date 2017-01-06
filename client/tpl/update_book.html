@@ -1,0 +1,12 @@
+<template name="update_book">
+	<fieldset>
+		<legend>Update a book</legend>
+		<label>Book's name</label>
+		<input type="text" id="book_name" value="{{book_name}}">
+		<label>Author</label>
+		<input type="text" id="book_author" value="{{book_author}}">
+		<label>Date</label>
+		<input type="text" id="book_date" value="{{book_date}}">
+		<a href="/book/{{_id}}">Update</a>
+	</fieldset>
+</template>

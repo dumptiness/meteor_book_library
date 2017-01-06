@@ -1,9 +1,21 @@
 import { Template } from 'meteor/templating';
-
+import {Session} from 'meteor/session';
 
 Template.book.helpers({
   all_books: function() {
     return books.find();
+  }
+});
+
+Template.view_book.helpers({
+  book_name: function() {
+    return books.findOne(Session.get('one_book')).book_name;
+  },
+  book_author: function() {
+    return books.findOne(Session.get('one_book')).book_author;  
+  },
+  book_date: function() {
+    return books.findOne(Session.get('one_book')).book_date;
   }
 });
 
@@ -22,6 +34,7 @@ Template.book.events({
   },
 
   "click #update_book": function(event) {
+    
   }
 
 });

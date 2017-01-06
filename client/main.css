@@ -99,6 +99,10 @@ li {
 	padding: 0 0 10px 0;
 }
 
+.infos:last-child{
+	border-bottom: 0;
+}
+
 .label {
 	color: #c9c9c9;
 	display: block;
