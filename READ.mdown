@@ -1,0 +1,15 @@
+The Library (CRUD meteor)
+
+Actions
+* Create a book
+    * Book's name
+    * Author
+    * Date
+* See a book
+* Update a book
+    * Book's name
+    * Author
+    * Date
+* Delete a book
+
+Made by Tiffanie & Jade

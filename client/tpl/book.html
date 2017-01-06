@@ -1,0 +1,30 @@
+<template name="book">
+	<div class="container">
+
+		<h1>The Library</h1>
+		<fieldset>
+			<legend>Add a book to the library</legend>
+			<label>Book's name</label>
+			<input type="text" id="book_name" placeholder="Pet Sematary">
+			<label>Author</label>
+			<input type="text" id="book_author" placeholder="Stephen King">
+			<label>Date</label>
+			<input type="text" id="book_date" placeholder="1983">
+			<button id="add_book">Add a book to the library</button>
+		</fieldset>
+
+		<h2>Book contained in the library:</h2>
+
+		<ul>
+		{{#each all_books}}
+			<li><div class="info"><div class="label">Name</div> {{book_name}}</div>
+			<div class="info"><div class="label">Author</div> {{book_author}}</div>
+			<div class="info"><div class="label">Date</div> {{book_date}}</div>
+			<a href="book/{{_id}}">Learn more</a>
+			<!-- <button id="update_book">Update</button> -->
+			<!-- {{pathFor route='view_book'}} -->
+			<button id="delete_book">Delete</button></li>
+		{{/each}}
+		</ul>
+	</div>
+</template>
